@@ -1,0 +1,34 @@
+<!-- BEGIN site/footer -->
+<div id="footer" class="container_12">
+  <div id="footer_menu">
+    <!--<ul class='menu'>-->
+        <!--<li class='first'><a href='[% c.uri_for('/') %]'>Home</a></li>-->
+        <!--<li><a href='[% c.uri_for('/credits') %]'>Credits</a></li>-->
+        <!--<li><a href='http://github.com/hippich/Bitcoin-Poker-Room/archives/master'>Download sources</a></li>-->
+        <!--<li><a href='http://github.com/hippich/Bitcoin-Poker-Room/issues'>Report bugs</a></li>-->
+        <!--<li class='last'><a href='[% c.uri_for('/contactus') %]'>Contact Us</a></li>-->
+    <!--</ul>-->
+  </div>
+  <div id="copyright">Ubitious &copy; 2010 <a href="http://www.yepcorp.com/">Yep Corp Limited</a></div>
+  <div id="bottom_footer">
+    <img src="/static/images/bitcoinacceptedhere.png" />
+  </div>
+  <div class="clear"></div>
+</div>
+<!-- END site/footer -->
+
+[% IF c.config.google_analytics_account %]
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '[% c.config.google_analytics_account %]']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+[% END %]

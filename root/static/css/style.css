@@ -1,0 +1,100 @@
+#header {
+  min-height: 100px;
+  background: #F5F5F5;
+  border-bottom: 1px solid #CCC;
+}
+
+#logo img {
+  margin: 10px 20px;
+}
+
+#footer {
+  min-height: 100px;
+  background: #F5F5F5;
+  border-top: 1px solid #CCC;
+  padding: 20px 0px 0;
+  text-align: center;
+}
+
+#content {
+  padding: 40px 0 20px;
+}
+
+#upload_form {
+  text-align: center;
+}
+
+#upload_form form {
+  margin-top: 200px;
+}
+
+#upload_form label {
+  display: none;
+}
+
+#file_upload-submit {
+  font-size: 32px;
+  padding: 5px 10px;
+  margin: 20px 0;
+}
+
+#file-url {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+#file-url input {
+  width: 500px;
+  font-size: 24px;
+}
+
+
+form#file_edit .textarea label {
+  display: block;
+}
+
+form#file_edit .textarea textarea {
+  width: 500px;
+  height: 100px;
+  margin: 10px 0 20px;
+}
+
+span.comment {
+  display: block;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+#upload_intro {
+  text-align: center;
+  margin: 20px 0 40px;
+}
+
+#download_intro {
+  background: #f8f8f8;
+}
+
+#download_intro .inner_container {
+  padding: 10px 20px;
+}
+
+#bottom_footer {
+  margin: 10px 0;
+  text-align: center;
+}
+
+#thumbnails li,
+#thumbnails {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+  list-style-image: none;
+  float: left;
+}
+
+#thumbnails li {
+  padding-right: 10px;
+  margin: 0;
+}

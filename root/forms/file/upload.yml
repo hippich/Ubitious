@@ -1,0 +1,21 @@
+---
+attributes_xml:
+  onsubmit: "return startEmbeddedProgressBar(this)"
+indicator: submit
+auto_fieldset: 1
+action: "/file/upload"
+id: "file_upload"
+auto_id: "%f-%n"
+
+elements:  
+  - type: File
+    name: file
+    label: "Upload:"
+    constraints:
+      - Required
+    
+  - type: Submit
+    name: submit
+    value: "Upload"
+
+ 

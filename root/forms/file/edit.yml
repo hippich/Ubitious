@@ -1,0 +1,19 @@
+---
+indicator: submit
+auto_fieldset: 1
+id: "file_edit"
+
+elements:  
+  - type: Text
+    name: receive_address
+    label: "Your BTC address:"
+    comment: "This address where you will be paid commission for all payments for downloads of your file."
+    
+  - type: Textarea
+    name: description
+    label: "Description:"
+    
+  - type: Submit
+    name: submit
+    value: Save
+

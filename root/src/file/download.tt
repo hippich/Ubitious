@@ -1,0 +1,45 @@
+<div class="grid_6">
+  <p>You are about to download file <strong>[% file.filename %]</strong>.</p>
+
+  [% IF file.description %]
+  <p><strong>Description: </strong>[% file.description | html %]</p>
+  [% END %]
+
+  [% IF thumbnails %]
+    <h3>Preview: </h3>
+    <ul id="thumbnails">
+      [% FOREACH thumbnail = thumbnails %]
+        <li><img src='[% thumbnail %]' /></li>        
+      [% END %]
+    </ul>
+  [% END %]
+
+  <div class='clear'></div>
+
+  <p>In order to download file please send <strong>[% price %]</strong> BTC to following 
+  address. After sending bitcoins, please refresh this page to start file download.</p>
+
+  <p>
+  Amount: <strong>[% price %]</strong><br>
+  Bitcoin address: <strong>[% btc_address %]</strong>
+  </p>
+</div>
+
+<div id="download_intro" class="grid_5 push_1">
+  <div class="inner_container">
+    <p>Bitcoins - new electronic currency. To know more visit 
+      <a href="http://www.bitcoin.org/" target="_blank">bitcoin.org</a>. 
+    </p>
+
+    <p>
+    If you do not have any bitcoins yet, you can get .05 bitcoins at 
+    <a href="https://freebitcoins.appspot.com/" target="blank">Bitcoin Faucet</a>.
+    Make sure to download bitcoin client from <a href="http://www.bitcoin.org" target="_blank">bitcoin.org</a>
+    to get your own wallet where you can receive free bitcoins from Bitcoin Faucet.
+    </p>
+
+    <p style="text-align: right;">
+      <img src="/static/images/welovebitcoin.png" />
+    </p>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+[% PROCESS site/header %]
+[% PROCESS site/messages %]
+
+<div id="content" class="container_12">
+  [% content %]
+  <div class="clear"></div>
+</div>
+
+[% PROCESS site/footer %]

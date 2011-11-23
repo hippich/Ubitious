@@ -1,0 +1,28 @@
+<form id="file-url">
+  <label for='filepath'>Download URL:</label><br />
+  <input type='text' name='filepath' value='[% c.uri_for('/file/download/' _ file.id) %]' />
+</form>
+
+<p>Send this URL to anyone you want to download this file.</p>
+
+
+<p class="small">
+File will expire <strong>[% file.expire.strftime("%e %B, %Y at %k:%M") %]</strong>. 
+Expiration date will be automatically extended when someone successfully download this file.
+</p> 
+
+<p>In order to get paid you need to <strong>invest</strong> into this file first.</p>
+
+<p>We generated new address for this file: <strong>[% address %]</strong>. Please, 
+send any amount bigger then 2 bitcents to this address and refresh this page. Price to
+download this file will be equal to total amount of bitcoins sent to this address.</p>
+
+<p>Once you invested into this file, you will be getting <strong>70%</strong> 
+share of every payment for this file.</p>
+
+<p>Current file price: <strong>[% file.price / 100 %]</strong> BTC.</p>
+
+[% IF received_amount > 0.01 %]
+[% form %]
+[% END %]
+

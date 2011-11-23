@@ -1,0 +1,10 @@
+<!-- BEGIN site/header -->
+<div id="header" class="container_12">
+  
+  <a href="/" alt="Ubitious" id="logo">
+    <img src="/static/images/logo.png" />
+  </a>
+
+  <div class="clear"></div>
+</div>
+<!-- END site/header -->

@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+ <head>
+  <title>[% template.title or site.title %]</title>
+  <link rel="stylesheet" href="[% c.uri_for('/static/css/reset.css') %]" type="text/css" />
+  <link rel="stylesheet" href="[% c.uri_for('/static/css/text.css') %]" type="text/css" />
+  <link rel="stylesheet" href="[% c.uri_for('/static/css/960.css') %]" type="text/css" />
+  <link rel="stylesheet" href="[% c.uri_for('/static/css/progress.css') %]" type="text/css" />
+  <link rel="stylesheet" href="[% c.uri_for('/static/css/style.css') %]" type="text/css" />
+  <script src="[% c.uri_for('/static/js/jquery-1.2.6.js') %]"></script>
+  <script src="[% c.uri_for('/static/js/progress.js') %]"></script>
+  <script src="[% c.uri_for('/static/js/progress.jmpl.js') %]"></script>
+ </head>
+ <body>
+   [% content %]
+ </body>
+</html>

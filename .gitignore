@@ -1,0 +1,9 @@
+ubitious.conf
+ubitious.db
+*.swo
+*.swn
+Makefile
+Makefile.old
+META.yml
+blib
+inc
